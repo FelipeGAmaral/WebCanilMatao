@@ -24,6 +24,19 @@
         </form>
         <a href="#">Esqueceu a senha ?<br> </a>
     </div>
+
+    <!-- Mensagem de erro -->
+
+<?php
+    if (isset($_GET['erro'])){
+        echo 
+            "<div class='msg' style='text-align:center; color:red; font-weight:bold;'>
+                <p>".$_GET['erro']."</p>
+            </div>
+            ";
+    }
+    ?>
+    
 </body>
 
 </html>

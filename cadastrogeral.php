@@ -2,25 +2,21 @@
 
 //Lendo os dados do formulario
 $nome = $_POST['nome'];
-$email = $_POST['email'];
-$senha = $_POST['senha'];
-$telefone = $_POST['telefone'];
+$senha = trim(password_hash($_POST['senha'], PASSWORD_DEFAULT));
+
 
 //conectando ao banco de dados
 include_once("conexao.php");
 
 //comando sql de insert
-$stmt = "insert into bd values (null, '$nome', '$email', '$senha', '$telefone');";
+$stmt = "insert into tbloginadm values ('$nome','$senha', 'u', 'n');";
 
 //executando o comando SQL
 if(mysqli_query($conn,$stmt)){
-    header('Location: telaexibir.php');
+    header('Location: loginadm.php');
 }else{
-    echo "Erro ao cadrastrar-se.<br>".mysqli_error($conn);
-    echo "<br><a href='cadastro.php'>Voltar</a>";
+    header("location:loginadm.php");
 }
 
-//fechando o BD
-mysqli_close($conn);
 
 ?>
