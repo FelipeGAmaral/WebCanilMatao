@@ -1,0 +1,514 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-image: url(img/fundocanil.png); */
+  /* background-color:blue;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px; */
+  /* backdrop-filter: blur(7.5px); */
+}
+/* 
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 45px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10%;
+  padding: 20px;
+  border: 1px solid #ccc;
+} */
+
+.cadastro{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-image: url(/IMG/fundocanil.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 5px;
+      backdrop-filter: blur(7.5px);
+}
+
+#cadastro{
+  background-color: white;
+}
+
+  
+
+  h1 {
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    padding: 10px;
+    width: 400px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #32CD32;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17.5px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #32CD32;
+  }
+
+h1{
+    color:#32CD32;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    color: #32CD32;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: #2ba72b;
+    padding: 20px;
+  }
+  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  #voltar {
+    font-weight: bold;
+    color: black;
+    background-color: #fff;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 10px ;
+    border-style: solid;
+  }
+
+  nav a:hover {
+    background-color: #ffffff00;
+    color: #000000;
+  }
+
+#texto-home{
+    text-align: center;
+}
+
+img{
+    display: block;
+    margin: 10px auto;
+    width: 500px;
+    height: auto;
+}
+
+.img2{
+  display: block;
+  margin: 10px auto;
+  width: 500px;
+  height: auto;
+}
+
+.texto-div1{
+    background-color: rgb(142, 56, 255);
+    text-align: center;
+}
+
+.texto-div2{
+    background-color: rgb(142, 56, 255);
+    text-align: center;
+}
+.background{
+    background-color: rgb(192, 192, 192);
+    height: 880px;
+}
+
+.rodape{
+    text-align: center;
+    background-color: rgb(148, 167, 187);
+    height: 50px;
+}
+
+.menu{
+  
+    height: 50px;
+    padding: 25px;
+    background-color: rgb(148, 167, 187);
+}
+
+/* TELA DE LOGIN */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/IMG/fundocanil.png);
+}
+
+.formLogin {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 40px;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+  gap: 5px
+}
+
+.areaLogin img {
+  width: 420px;
+}
+
+.formLogin h1 {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: 2.3em;
+}
+
+.formLogin p {
+  display: inline-block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.formLogin input {
+  padding: 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  border-radius: 4px;
+  transition: all linear 160ms;
+  outline: none;
+}
+
+
+.formLogin input:focus {
+  border: 1px solid #1cc03a;
+}
+
+.formLogin label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.formLogin a {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: #555;
+  transition: all linear 160ms;
+}
+
+.formLogin a:hover {
+  color: #1cc03a;
+}
+
+.btn {
+  background-color: #f72585;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none !important;
+  transition: all linear 160ms;
+  cursor: pointer;
+  margin: 0 !important;
+
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #ff0676;
+
+}
+
+
+#menu2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%
+}
+
+#menucont {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%
+}
+
+#Celular {
+  padding: 10px;
+    width: 400px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+#telefone {
+  padding: 10px;
+    width: 400px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.imagens {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*imagens home*/
+
+.container1 {
+    text-align: center;
+}
+
+.image {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    height: 194px;
+    margin: 0;
+}
+
+.imagem-clicavel {
+  display: inline-block;
+  margin: 10px;
+}
+
+/*adoção*/
+
+.pageado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+
+
+/* TELA QUEMSOMOSNOS */
+
+.colunm {
+  display: flex;
+  padding: 80px;
+}
+
+.quemsomos {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.canil {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    width: 700px; 
+    height: 500px; 
+    border: 4px solid #1cc03a;
+
+}
+
+.sobrenostxt {
+  font-size: 18px; 
+}
+
+/*contato*/
+
+  .colunmcontato {
+    padding: 13px;
+  }
+
+/* TELA DE LOGIN ADM */
+
+
+#particles-js {
+  height: 100%
+}
+
+.loginBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  min-height: 200px;
+  background: #000000;
+  border-radius: 20px;
+  padding: 70px;
+  box-sizing: border-box
+}
+
+.user {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+  height:150px;
+  width:150px;
+}
+
+h3 {
+  margin: 0;
+  padding: 0 0 20px;
+  color: #59238F;
+  text-align: center
+}
+
+.loginBox input {
+  width: 100%;
+  margin-bottom: 20px
+}
+
+.loginBox input[type="text"],
+.loginBox input[type="password"] {
+  border: none;
+  border-bottom: 2px solid #262626;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  background: transparent;
+  font-size: 16px;
+  padding-left: 20px;
+  box-sizing: border-box
+}
+
+.loginBox input[type="text"]:hover,
+.loginBox input[type="password"]:hover {
+  color: #42F3FA;
+  border: 1px solid #42F3FA;
+  box-shadow: 0 0 5px rgba(0, 255, 0, .3), 0 0 10px rgba(0, 255, 0, .2), 0 0 15px rgba(0, 255, 0, .1), 0 2px 0 black
+}
+
+.loginBox input[type="text"]:focus,
+.loginBox input[type="password"]:focus {
+  border-bottom: 2px solid #42F3FA
+}
+
+.inputBox {
+  position: relative
+}
+
+.inputBox span {
+  position: absolute;
+  top: 10px;
+  color: #5c5c5c
+}
+
+.loginBox input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  font-size: 16px;
+  background: #59238F;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer
+}
+
+.loginBox a {
+  color: #5c5c5c;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  display: block
+}
+
+a:hover {
+  color: #00ffff
+}
+
+p {
+  color: #0000ff
+}
+
+
+  /* card home */
+
+  .carhome{
+    text-align: 0;
+  }
+/* NAVBAR */
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  a:hover {
+    color: #333;
+  }
+
+  a.active {
+    color: #333;
+  }
+
+  /* Tela de Ajudar */
+
+  .cardB{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/IMG/fundocanil.png);
+}
+  
