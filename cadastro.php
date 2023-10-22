@@ -30,17 +30,8 @@
           <label for="nome">Nome:</label>
           <input type="text" id="nome" name="nome" required>
     
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-    
           <label for="senha">Senha:</label>
           <input type="password" id="senha" name="senha" required>
-
-          <label for="senha">Confirmar Senha:</label>
-          <input type="password" id="senha" name="senha" required>
-    
-          <label for="telefone">Celular:</label>
-          <input type="tel" id="Celular" name="telefone" required><br>
 
           <input type="submit" value="Cadastrar" >
         </form>
@@ -48,5 +39,9 @@
       </div>
   
 </body>
+
+      <script src="JS/script.js"></script>
+      <script src="JS/swiper-bundle.min.js"></script>
+
 
 </html>

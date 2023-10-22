@@ -28,7 +28,7 @@ if(!$erro) {
     $_SESSION['adm'] = $adm['nome'];
     if ($usuario['tipo'] == "a") {
         $_SESSION['tipo'] = "a";
-        header("location:loginadm.php");
+        header("location:animaisadocao.php");
     } else if ($adm['tipo'] == "u") {
         $_SESSION['tipo'] = "u";
         header("location:loginadm.php");

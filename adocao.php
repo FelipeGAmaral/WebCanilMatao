@@ -62,12 +62,13 @@
                 <textarea id="descricao" name="descricao" rows="4" cols="50"></textarea>
 
 
-                <a href="/">Esqueci minha senha</a>
                 <input type="submit" value="Cadastrar" class="btn" />
         </form>
     </div>
 
 
+    <script src="JS/script.js"></script>
+    <script src="JS/swiper-bundle.min.js"></script>
 
 
 

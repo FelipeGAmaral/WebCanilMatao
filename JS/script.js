@@ -71,3 +71,16 @@ var swiper = new Swiper(".slide-content", {
 
   // LoginADM
 
+const olho = document.getElementById("olho");
+const senha = document.getElementById("senha");
+
+olho.addEventListener("mouseover" ,mostrar);
+olho.addEventListener("mouseout" ,esconder);
+
+function mostrar() {
+  senha.type = "password";
+}
+
+function esconder() {
+  senha.type = "password";
+}
