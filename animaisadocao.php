@@ -17,6 +17,7 @@
     <nav>
       <?php
       include_once("menu.html");
+      include_once("validar.php");//Protege a pagina
       ?>
     </nav>
 

@@ -13,23 +13,65 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
+<style>
+  footer {
+  padding: 1rem 0;
+  text-align: center;
+  background-color: #2ba72b;
+}
+
+  .quadro-branco {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    margin-right: 5%;
+    border-radius: 7px;
+    text-align: justify;
+    text-justify: inter-word;
+    box-shadow: -4px 4px 4px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  .quadrobrancoimg {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 5%;
+    border-radius: 7px;
+    
+  }
+
+  .quadro-branco img {
+    max-width: 100%;
+    max-height: 100%;
+    
+  }
+
+  .quemsomos {
+    color: #32CD32;
+    text-align: left;
+    font-size: 30px;
+
+  }
+</style>
+
+
 <body style="background-image:url(img/fundocanil.png); background-size:cover;">
-  <div class="container-fluid">
-    <nav>
-      <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="quemsomos.php">Quem Somos</a></li>
-        <li><a href="queroajudar.php">Quero Ajudar</a></li>
-        <li><a href="contato.php">Contato</a></li>
+<div class="container-fluid; padding-left:40px;" >
+    <nav style="padding: 5px;">
+      <ul style= "padding-top: 8px;">
+        <li><a style = "text-decoration:none; color: #ffff" href="index.php">Home</a></li>
+        <li><a style = "text-decoration:none; color: #ffff" href="quemsomos.php">Quem Somos</a></li>
+        <li><a style = "text-decoration:none; color: #ffff" href="queroajudar.php">Quero Ajudar</a></li>
+        <li><a style = "text-decoration:none; color: #ffff" href="contato.php">Contato</a></li>
       </ul>
     </nav>
   </div>
 
-  <img class="img2" src="IMG/anuncio.jpg" alt=""><br>
+  <img class="img2" src="IMG/anuncio.jpg" alt="" style=" box-shadow: -4px 4px 4px 4px rgba(0, 0, 0, 0.7);"><br>
   </div>
   <div class="container">
 
-
+  <div class="quadro-branco">
     <div class="cardhome">
       <div class="row row-cols-1 row-cols-md-5 g-4">
         <?php
@@ -61,7 +103,9 @@
             echo '
                       <div class="col">
                           <div class="card">
-                              <img src="./IMG/cachorro1.jpg" class="card-img-top" alt="...">
+                          <a href="teladocachorro.php?codanimal='.$animal['codanimal'].'">
+                              <img src="./IMG/'.$animal['codanimal'].'1.jpg" class="card-img-top" alt="...">
+                              </a>
                               <div class="card-body">
                               <h5 class="card-title">Nome: ' . $animal['nome'] . '</h5>
                                   <h5 class="card-title">Idade: ' . $animal['idade'] . ' anos</h5>
@@ -80,8 +124,10 @@
 
         ?>
       </div>
+      </div>
     </div>
   </div>
+  <br>
   <!-- Páginação de dados -->
   <div class="container">
     <ul class="pagination">
@@ -126,12 +172,18 @@
 
   <div class="container-fluid">
 
-    <nav aria-label="...">
-
-    </nav>
 
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+  <footer style="position: absolute; width: -webkit-fill-available;">
+      <div class="grid">
+        <div class="column-xs-12">
+          <p class="copyright" style="color: aliceblue;">&copy; Copyright 2018
+        </div>
+      </div>
+    </footer>
+
 </body>
 
 </html>

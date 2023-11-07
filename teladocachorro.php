@@ -13,7 +13,7 @@
 </head>
 
 
-<body>
+<body style="background-image:url(img/fundocanil.png); background-size:cover;">
   <nav>
     <ul>
       <li><a href="index.php">Inicio</a></li>
@@ -29,31 +29,43 @@
         <div class="column-xs-12">
 
         </div>
+
+
+        <?php
+          $codanimal = $_GET['codanimal'];
+          include_once('conexao.php');
+          $sql = "select * from tbanimais where codanimal = $codanimal;";
+          $resultado = mysqli_query($conn,$sql);
+           
+          $animal = mysqli_fetch_assoc($resultado);
+          ?>
       </div>
       <div class="grid product">
         <div class="column-xs-12 column-md-7">
           <div class="product-gallery">
             <div class="product-image">
-              <img class="active" src="IMG/cachorro1.jpg">
+              <img class="active" src="IMG/<?php echo $animal['codanimal'];?>1.jpg">
             </div>
             <ul class="image-list">
-              <li class="image-item"><img src="IMG/cachorro1.jpg"></li>
-              <li class="image-item"><img src="IMG/cachorro2.jpg"></li>
-              <li class="image-item"><img src="IMG/cachorro3.jpg"></li>
+              <li class="image-item"><img src="IMG/<?php echo $animal['codanimal'];?>1.jpg"></li>
+              <li class="image-item"><img src="IMG/<?php echo $animal['codanimal'];?>2.jpg"></li>
+              <li class="image-item"><img src="IMG/<?php echo $animal['codanimal'];?>3.jpg"></li>
             </ul>
           </div>
         </div>
         <div class="column-xs-12 column-md-5">
+        <?php
+          echo"       
           
-          
-          
-            <h2>Toninho</h2><br>
-            <p>Idade: 5 anos</p>
-            <p>Sexo: Macho</p>
-            <p>Raça: cachorro</p>
+            <h2>".$animal['nome']."</h2><br>
+            <p>Idade: ".$animal['idade']." anos</p>
+            <p>Sexo: ".$animal['sexo']."</p>
+            <p>Raça: ".$animal['raca']."</p>
+            ";
+?>
           
           <div class="description">
-            <p>Toninho é um cachorro muito alegre, adoro brincar, arteiro porem feliz </p>
+            <p><?php echo $animal['sobre'];?></p>
           </div>
           <button class="add-to-cart" onclick="mostrarModal()">Quero Adotar</button>
         </div>

@@ -203,7 +203,7 @@
   .add-to-cart {
     position: relative;
     display: inline-block;
-    background: #3e3e3f;
+    background: #106710;
     color: #FFF;
     border: none;
     border-radius: 0;
@@ -230,7 +230,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: #3e3e3f;
+      background: #2ba72b;
       transform: scaleX(0);
       transform-origin: 0 50%;
       transition: transform 0.3s ease-out;

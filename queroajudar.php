@@ -13,14 +13,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
-<body style="background-image:url(img/fundocanil.png); background-size:cover;">
-  <div class="container-fluid">
-    <nav>
-      <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="quemsomos.php">Quem Somos</a></li>
-        <li><a href="queroajudar.php">Quero Ajudar</a></li>
-        <li><a href="contato.php">Contato</a></li>
+<body style="background-image:url(img/fundocanil.png); background-size:cover; ">
+  <div class="container-fluid padding-left:50px;">
+  <nav style="padding: 5px;">
+      <ul style= "padding-top: 8px;">
+        <li><a style = "text-decoration:none; color: #ffff" href="index.php">Home</a></li>
+        <li><a style = "text-decoration:none; color: #ffff" href="quemsomos.php">Quem Somos</a></li>
+        <li><a style = "text-decoration:none; color: #ffff" href="queroajudar.php">Quero Ajudar</a></li>
+        <li><a style = "text-decoration:none; color: #ffff" href="contato.php">Contato</a></li>
       </ul>
     </nav>
   </div>
@@ -61,6 +61,7 @@
     p {
       line-height: 1.6;
       margin-bottom: 20px;
+      color: #32CD32;
     }
 
     ul {
@@ -77,6 +78,11 @@
       text-decoration: underline;
     }
 
+    h2{
+      font-weight: 600;
+
+    }
+
     footer {
       padding: 1rem 0;
       text-align: center;
@@ -86,18 +92,18 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="container" style="top: 20%; left: 14%; top: 9%; position: absolute; background-color: white; box-shadow: -4px 4px 4px 4px rgba(0, 0, 0, 0.7);">
       <h2>Perguntas Frequentes</h2>
       <p>Aqui estão algumas perguntas frequentes que podem ajudar você a entender melhor o nosso site.</p>
 
-      <h3>Como adotar um animal?</h3>
+      <h2>Como adotar um animal?</h2>
       <p>Para adotar um animal, siga os seguintes passos:</p>
 
 
       <ul>
         <li>1. Navegue em nossa lista de animais disponíveis.</li><br>
         <li>2. Escolha o animal que deseja adotar.</li><br>
-        <li>3. Entre em contato conosco para agendar uma visita e conhecer o animal pessoalmente.</li><br>
+        <li>3. Entre em contato conosco para agendar uma visita e conhecer o animal pessoalmente, através da janela mostrada ao escolher o animal.</li><br>
         <li>4. Após a visita, preencha o formulário de adoção e aguarde nossa análise.</li>
       </ul>
 
@@ -118,16 +124,13 @@
       </ul>
     </div>
 
-
-
-    <footer>
-      <div class="grid">
+    <footer style="position: absolute; bottom: 0  ; width: -webkit-fill-available;">
+      
         <div class="column-xs-12">
           <p class="copyright" style="color: aliceblue;">&copy; Copyright 2018
-        </div>
+       
       </div>
     </footer>
-
 
   </body>
 

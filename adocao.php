@@ -15,11 +15,12 @@
     <nav>
         <?php
         include_once("menu.html");
+        include_once("validar.php");//Protege a pagina
         ?>
     </nav>
 
     <div class="pageado">
-        <form method="get" action="tbcadastrar.php">
+        <form method="post" action="tbcadastrar.php" enctype="multipart/form-data">
             <div class="formLogin">
                 <h1>Cadastro de Animal</h1>
                 <p>Primeiro vamos cadastrar o seu pet!</p>
@@ -58,8 +59,12 @@
                     <option value="Outros">Outros</option>
                 </select><br>
 
+                <label for="foto1">Foto 1</label><input type='file' name='foto1' accept='image/jpg'>
+                <label for="foto1">Foto 2</label><input type='file' name='foto2' accept='image/jpg'>
+                <label for="foto1">Foto 3</label><input type='file' name='foto3' accept='image/jpg'>
+
                 <label for="descricao">Fale um pouco sobre o animal:</label>
-                <textarea id="descricao" name="descricao" rows="4" cols="50"></textarea>
+                <textarea id="descricao" name="sobre" rows="4" cols="50"></textarea>
 
 
                 <input type="submit" value="Cadastrar" class="btn" />

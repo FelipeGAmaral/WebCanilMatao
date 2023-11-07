@@ -21,11 +21,11 @@
     background-color: white;
     padding: 20px;
     text-align: center;
-    margin: 5%;
+    margin-right: 5%;
     border-radius: 7px;
-    border-style: solid;
     text-align: justify;
     text-justify: inter-word;
+    box-shadow: -4px 4px 4px 4px rgba(0, 0, 0, 0.7);
   }
 
   .quadrobrancoimg {
@@ -34,12 +34,13 @@
     text-align: center;
     margin: 5%;
     border-radius: 7px;
-    border-style: solid;
+    
   }
 
   .quadro-branco img {
     max-width: 100%;
     max-height: 100%;
+    
   }
 
   .quemsomos {
@@ -51,25 +52,24 @@
 </style>
 
 <body style="background-image:url(img/fundocanil.png); background-size:cover;">
-  <div id="texto-home">
+  <div id="menucont"> <!---id="texto-home"-->
 
+  <div class="container-fluid">
     <nav>
       <ul>
         <li><a href="index.php">Home</a></li>
         <li><a href="quemsomos.php">Quem Somos</a></li>
-        <li><a [class]="login" href="login.php">Login</a></li>
-        <li><a [class]="cadastro" href="cadastro.php">Cadastre-se</a></li>
+        <li><a href="queroajudar.php">Quero Ajudar</a></li>
         <li><a href="contato.php">Contato</a></li>
       </ul>
     </nav>
-
-    <img class="img2" src="../backup/IMG/can.jpg" alt=""><br>
+  </div>
 
     <div class="colunm">
       <div class="quadro-branco">
         <div class="conteudo">
-          <p class="quemsomos">Quem somos nós?</p>
-          <p class="sobrenostxt">
+          <p class="quemsomos">Quem somos nós?</p><br>
+          <p class="sobrenostxt " style = " font-size: 18px; line-height: 1.5; color: black; font-weight: 600;  ">
             Há mais de duas décadas, o Canil Municipal de Matão tem uma história profundamente enraizada, dedicada a oferecer assistência a cães e gatos em situações vulneráveis. Estes incluem animais doentes, filhotes frágeis, idosos e aqueles com deficiências, que são encontrados pelas ruas da cidade.
 
             Além de servir como um refúgio para a recuperação desses companheiros de quatro patas, o canil desempenha um papel significativo como um centro de cuidados de saúde animal. Ele providencia serviços ambulatoriais essenciais para cães e gatos, especialmente dirigidos a tutores cadastrados junto à Secretaria do Meio Ambiente, que enfrentam limitações financeiras.
@@ -80,14 +80,20 @@
           </p>
         </div>
       </div>
-      <div class="imagem-canil">
-        <img class="canil" src="../backup/IMG/canil.jpeg" alt="Canil Municipal de Matão">
+      <div>
+      <div class="imagem-canil" style=" flex: 1; display: flex; justify-content: center; align-items: center; bor der: 4px solid #1cc03a; box-shadow: -4px 4px 4px 4px rgba(0, 0, 0, 0.7); ">
+        <img class="canil" src="IMG/canil.jpeg" alt="Canil Municipal de Matão" >
       </div>
+      <br>
+      <p style="text-align:center; color: black; font-weight: 600;">Imagem tirada no Canil municipal de Matão no dia: XX/XX/XXXX</p>
     </div>
-
-
+    </div>
+    
     <!---->
+    
 
 </body>
 
 </html>
+
+
